@@ -18,6 +18,6 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: ${{ b52b7eab-6b22-4362-afaa-95528cf46a1e}}
         with:
           args: --severity-threshold=high
