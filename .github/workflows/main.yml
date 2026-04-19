@@ -15,9 +15,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Snyk to check for vulnerabilities
+      -
+- name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
-          SNYK_TOKEN: ${{ b52b7eab-6b22-4362-afaa-95528cf46a1e}}
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --severity-threshold=high
